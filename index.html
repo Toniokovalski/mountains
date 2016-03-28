@@ -1,16 +1,17 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mountains Landing Page</title>
     <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
 <!--   HEADER   -->
     <div id="header" class="header">
-        <div class="conteiner">
+        <div class="container">
             <a href="#"><img class="logo" src="images/logo.png" alt="logo"/></a>
 
             <div class="menu-wrap">
@@ -33,8 +34,8 @@
 
     <div id="billboard" class="billboard">
         <img src="images/billboard.jpg" alt="billboard"/>
-        <div class="conteiner wraper">
-            <div class="travel-with-us">
+        <div class="container wraper">
+            <div class="bill-info">
                 <h1>Travel with us</h1>
                 <p class="mountains">to the Mountains</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing <br> elit, sed do eiusmod tempor incidid</p>
@@ -44,7 +45,7 @@
     </div>
 
     <div id="blog" class="blog">
-        <div class="conteiner">
+        <div class="container">
             <img class="map" src="images/pixel_world_map.png" alt="map">
             <div class="about-us">
                 <img class="wave" src="images/waves.png" alt="wave"/>
@@ -57,15 +58,21 @@
         </div>
     </div>
 
-    <div id="journal" class="journal conteiner">
-        <div class="journal-conteiner">
+    <div id="journal" class="journal">
+        <div class="journal-container">
             <img class="wave" src="images/waves.png" alt="wave"/>
             <h2>Our journal</h2>
         </div>
 
-        <div class="conteiner padding-bottom">
+        <div class="container bottom">
             <div class="journal-wrapper">
-                <a href="#"><img src="images/journal_1.jpg" alt="journal1"/></a>
+                <div class="first">
+                    <a href="#">
+                        <img src="images/journal_1.jpg" alt="journal1"/>
+                        <img class="heart" src="images/heart.png" alt="heart"/>
+                    </a>
+                </div>
+
                 <div class="journal-box">
                     <span class="triangle-01">
                         <span></span>
@@ -76,7 +83,14 @@
                     <span class="number">01</span>
                 </div>
 
-                <a href="#"><img src="images/journal_2.jpg" alt="journal2"/></a>
+
+                <div class="second">
+                    <a href="#">
+                        <img src="images/journal_2.jpg" alt="journal2"/>
+                        <img class="drop" src="images/drop.png" alt="drop"/>
+                    </a>
+                </div>
+
                 <div class="journal-box">
                     <span class="triangle-02">
                         <span></span>
@@ -87,7 +101,14 @@
                     <span class="number">02</span>
                 </div>
 
-                <a href="#"><img src="images/journal_3.jpg" alt="journal3"/></a>
+
+                <div class="third">
+                    <a href="#">
+                        <img src="images/journal_3.jpg" alt="journal3"/>
+                        <img class="leaf" src="images/leaf.png" alt="leaf"/>
+                    </a>
+                </div>
+
                 <div class="journal-box">
                     <span class="triangle-03">
                         <span></span>
@@ -99,18 +120,225 @@
                 </div>
             </div>
         </div>
+
+        <div class="clearfix bottom"></div>
     </div>
 
-    <div id="offer" class="">
-        <img class="wave" src="images/waves.png" alt="wave"/>
-        <h3>Do you wanna go?</h3>
-        <p>Aliquam sed posuere urna, et gravida nisl. Praesent interdum nisl libero, pretium egestas purus eleifend vitae. Mauris suscipit vel lectus at luctus.</p>
+    <div id="offer" class="offer">
+        <div class="container">
+            <div class="offer-container">
+                <img class="wave" src="images/waves.png" alt="wave"/>
+                <h3>Do you wanna go?</h3>
+                <p>Aliquam sed posuere urna, et gravida nisl. Praesent </br> interdum nisl libero, pretium egestas purus eleifend vitae. Mauris suscipit vel lectus at luctus.</p>
+
+                <form class="form" action="">
+                    <input class="data slice slice2" type="text" placeholder="Your name" required>
+                    <input class="data" type="text" placeholder="Your phone" required>
+                    <button class="order" type="submit">Order now </button>
+                </form>
+                
+                <div class="secure">
+                    <img class="lock" src="images/lock.png" alt="lock">
+                    <p>* Your data will not be transferred</p>
+                </div>
+            </div>
+        </div>
     </div>
 
+    <div id="scheme" class="container">
+        <div class="scheme">
+            <img class="wave" src="images/waves.png" alt="wave">
+            <h2>How we work</h2>
+        </div>
+
+        <div class="scheme-container">
+            <div class="dotted"></div>
+            <div class="circle">
+                <div class="scheme-number">1</div>
+                <img src="images/1.png" alt="1">
+                <h6>Lorem ipsum dolor sit</h6>
+                <p>amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+            </div>
+
+            <div class="circle">
+                <div class="scheme-number">2</div>
+                <img src="images/2.png" alt="2">
+                <h6>Lorem ipsum dolor sit</h6>
+                <p>amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+            </div>
+
+            <div class="circle">
+                <div class="scheme-number">3</div>
+                <img src="images/3.png" alt="3">
+                <h6>Lorem ipsum dolor sit</h6>
+                <p>amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+            </div>
+
+            <div class="circle last">
+                <div class="scheme-number">4</div>
+                <img src="images/4.png" alt="4">
+                <h6>Lorem ipsum dolor sit</h6>
+                <p>amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="travel-with-us" class="travel-with-us">
+        <div class="container">
+            <img class="wave" src="images/waves.png" alt="wave">
+            <h2>Travel with us</h2>
 
 
+            <div class="mountain-offers">
+                <div class="carpathian">
+                    <div class="rating">
+                        <span class="star">☆<span class="star">☆<span class="star">☆<span class="star">☆</span></span></span></span>
+                    </div>
 
+                    <h4>Carpathian</h4>
+                    <p>Lorem ipsum dolor si amet, consectetur adipisicing elit, sed do</p>
 
+                    <p class="old-price">3150&#36;</p>
+                    <p class="new-price">&#36;793</p>
+                </div>
 
+                <div class="alps">
+                    <div class="rating">
+                        <span class="star">☆<span class="star">☆<span class="star">☆<span class="star">☆<span class="star">☆</span></span></span></span></span>
+                    </div>
+
+                    <h4>Alps</h4>
+                    <p>Lorem ipsum dolor si amet, consectetur adipisicing elit, sed do</p>
+
+                    <p class="old-price">3150&#36;</p>
+                    <p class="new-price">&#36;1893</p>
+                </div>
+
+                <div class="pyrenees">
+                    <div class="rating">
+                        <span class="star">☆<span class="star">☆<span class="star">☆<span class="star">☆<span class="star">☆</span></span></span></span></span>
+                    </div>
+
+                    <h4>Pyrenees</h4>
+                    <p>Lorem ipsum dolor si amet, consectetur adipisicing elit, sed do</p>
+
+                    <p class="old-price">3150&#36;</p>
+                    <p class="new-price">&#36;2593</p>
+                </div>
+
+                <div class="rocky">
+                    <div class="rating">
+                        <span class="star">☆<span class="star">☆<span class="star">☆<span class="star">☆<span class="star">☆</span></span></span></span></span>
+                    </div>
+
+                    <h4>Rocky</h4>
+                    <p>Lorem ipsum dolor si amet, consectetur adipisicing elit, sed do</p>
+
+                    <p class="old-price">3150&#36;</p>
+                    <p class="new-price">&#36;2123</p>
+                </div>
+
+                <div class="kavkaz">
+                    <div class="rating">
+                        <span class="star">☆<span class="star">☆<span class="star">☆</span></span></span>
+                    </div>
+
+                    <h4>Kavkaz</h4>
+                    <p>Lorem ipsum dolor si amet, consectetur adipisicing elit, sed do</p>
+
+                    <p class="old-price">3150&#36;</p>
+                    <p class="new-price">&#36;593</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="gallery" class="gallery">
+        <div class="container">
+            <img class="wave" src="images/waves.png" alt="waves">
+            <h2>Gallery</h2>
+
+            <div class="gallery-1">
+                <a href="#"><img class="top-image" src="images/gallery_1.jpg" alt="gallery"></a>
+                <a href="#"><img src="images/gallery_2.jpg" alt="gallery"></a>
+            </div>
+
+            <div class="gallery-2">
+                <a href="#"><img class="top-image" src="images/gallery_3.jpg" alt="gallery"></a>
+                <a href="#"><img src="images/gallery_4.jpg" alt="gallery"></a>
+            </div>
+
+            <div class="gallery-3">
+                <a href="#"><img class="top-image" src="images/gallery_5.jpg" alt="gallery"></a></a>
+                <a href="#"><img src="images/gallery_6.jpg" alt="gallery"></a>
+            </div>
+        </div>
+    </div>
+
+    <div id="logos" class="logos">
+        <div class="container">
+            <div class="logo-container">
+                <div class="logo-partners"><a href="#"><img src="images/logo-slack.png" alt="partner logo"></a></div>
+                <div class="logo-partners"><a href="#"><img src="images/logo-A.png" alt="partner logo"></a></div>
+                <div class="logo-partners"><a href="#"><img src="images/logo-google.png" alt="partner logo"></a></div>
+                <div class="logo-partners"><a href="#"><img src="images/logo-facebook.png" alt="partner logo"></a></div>
+                <div class="logo-partners"><a href="#"><img src="images/logo-spotify.png" alt="partner logo"></a></div>
+                <div class="logo-partners"><a href="#"><img src="images/logo-nike.png" alt="partner logo"></a></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="clients" class="clients">
+        <div class="container">
+            <img class="wave" src="images/waves.png" alt="waves">
+            <h2>our Clients say</h2>
+
+            <div class="client1">
+                <span>“</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do  enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse </p>
+                <div class="name">
+                    <img src="images/client_1.jpg" alt="client1">
+                    <p class="bold">Pavliv Yaroslav</p>
+                    <p>Web designer</p>
+                </div>
+            </div>
+
+            <div class="client2">
+                <span>“</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do  enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse </p>
+                <div class="name">
+                    <img src="images/client_2.jpg" alt="client2">
+                    <p class="bold">John Scott</p>
+                    <p>The Fringe</p>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <div class="contact-container">
+                    <p class="contact-big">Contacts</p>
+                    <p>Sign up for our newsletter to receive updates</p>
+                </div>
+
+                <form class="contact" action="">
+                    <input class="contact-data" type="text" placeholder="Name" required>
+                    <input class="contact-data" type="text" placeholder="Phone" required>
+                    <input class="contact-data" type="text" placeholder="E-mail" required>
+                    <button class="contact-order" type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer" class="footer">
+        <div class="container">
+            <p class="copyright">All rights reserved 2015</p>
+            <div class="social">
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-vk"></i></a>
+            </div>
+            <p class="telephone">1 234 243 123</p>
+        </div>
+    </div>
 </body>
 </html>
