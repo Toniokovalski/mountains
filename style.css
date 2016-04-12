@@ -622,6 +622,8 @@ h6 {
     overflow: hidden;
 }
 
+.mountain-offers h4:hover {color: #da4f4e;}
+
 .rating {
     margin-left: 20px;
     margin-top: 15px;
